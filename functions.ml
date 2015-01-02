@@ -359,31 +359,6 @@ let rec min_liste_norme f = function
 		if f a < f b then a else b;;
 
 
-(*
-
-let l = ameliorer_circuit cir 100 500;;
-
-let cir2 = min_liste_norme (function cir -> cir.l) l;;
-
-clear_graph();;
-dessiner_circuit cir 50;;
-clear_graph ();;
-dessiner_circuit cir2 50;;
-charge cir;;
-charge cir2;;
-*)
-
-(****exemples
-let cir = circuit_aleatoire 30 100;;
-cir.l;;
-charge cir;;
-trajet_approche_charge_inf cir 100;;
-
-cir.l;;
-charge cir;;
-
-*)
-
 
 
 (*************STATISTIQUES ******************)
