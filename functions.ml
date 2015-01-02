@@ -271,9 +271,6 @@ let circuit_aleatoire taille n =
 			
 
 
-
-
-
 let transposition_alea m =
    let i, j = ref 0, ref 0 in
       while !i = !j do
@@ -458,15 +455,3 @@ let trajet_approche_charge_finie cir max ch_max =
         done; !it
       with max_depasse -> !it;;
 
-(*
-let cir = circuit_aleatoire 20 10;;
-clear_graph();;
-dessiner_circuit cir 20;;
-let cir3 = copy_circuit cir;;
-
-
-
-trajet_approche_charge_finie cir 500 20;;
-trajet_approche_charge_inf cir3 500;;
-
-etape_alea_charge_finie cir 1000 1;; *)
